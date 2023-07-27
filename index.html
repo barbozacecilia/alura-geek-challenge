@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Css style sheet reference -->
+    <link rel="stylesheet" href="./styles/basic.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/menu/menu.css">
+    <link rel="stylesheet" href="./styles/hero/hero.css">
+    <link rel="stylesheet" href="./styles/products/products.css">
+    <link rel="stylesheet" href="./styles/footer/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <title>AluraGeek | Home</title>
+</head>
+<body>
+    <main>
+    <div class="all">
+        <header>
+            <!-- Sección del Menú  -->
+            <section id="menu__container">
+                    <div id="menu__logo-input_container">
+                        <div id="menu__logo_container">
+                            <img src="./assets/sports_esports_black_24dp 1.png" alt="AluraGeek Logo" id="menu__logo">
+                            <img src="./assets/Texto.png" alt="AluraGeek" id="menu__text">
+                        </div>
+                        <input  id="header__search-input" type="text" id="search" placeholder="¿Qué deseas buscar?"></input>
+                    </div>
+                    <button id="menu__btn"><div id="menu__btn_text" type="submit" >Login</div></button>
+
+            </section>
+        </header>
+        <section id="hero__container">
+            <div id="hero__background" >
+            <h1 id="hero__title">Febrero Promocional</h1>
+            <h3 id="hero__subtitle">Productos selecionados con 33% de descuento</h2>
+            <div><button id="hero__btn">Ver consolas</button></div>
+        </div>
+        </section>
+
+        <section id="products__container">
+            <div id="products__items_container" data-product>
+                <h2 class="products__title">Star Wars</h2>
+                <div class="products__card_container">
+                    <img class="card_img"  src="./assets/product-img.png" alt="imagen del producto">
+                    <h4 class="card_title">nombre del producto</h4>
+                    <p class="card_price">price</p>
+                    <a class="card_link" href="">Link</a>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div id="footer__container">
+                <div id="footer__logo">
+                    <img src="./assets/sports_esports_black_24dp 1.png" alt="AluraGeek Logo" id="menu__logo">
+                    <img src="./assets/Texto.png" alt="AluraGeek" id="menu__text">
+                 </div>
+                    <div id="footer__info_container"><h4 id="footer__info">Somos apasionados por la cultura Geek, por eso nos encontramos siempre buscando los mejores productos de calidad para personas tan apasionadas como nosotros</h4>
+                    </div>
+                    <div id="footer__form_container">
+                        <h4>Hable con nosotros</h4>
+                        <form id="footer__form-container">
+                            <div class="form__group field">
+                                <input class="form__field" type="input" placeholder="Nombre" name="name" id="name" required>
+                                <label class="form__label" for="name">Nombre</label>
+                            </div>
+                            <div class="form__group field">
+                                <textarea class="form__field" type="input" placeholder="Escribe tu mensaje"  id="name" name="text" required></textarea>
+                                <label class="form__label" for="text">Escribe tu mensaje</label>
+                            </div>
+                            <button type="submit" class="form__contact__btn">Enviar mensaje</button>
+                        </form>
+                    </div>
+        </footer>
+    </div>
+</main>
+<script src="././controllers/products-controller.js" type="module"></script>
+
+</body>
+</html>

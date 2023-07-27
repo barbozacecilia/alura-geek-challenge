@@ -1,0 +1,28 @@
+#hero__background{
+    background-image: url("/assets/universe-hero.jpeg");
+    padding: 32px;
+}
+#hero__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 16px;
+}
+
+#hero__title{
+ color: var(--white);
+ margin-bottom: 1vh;
+}
+#hero__subtitle{
+    color: var(--white);
+    margin-bottom: 1vh
+}
+#hero__btn{
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 400;
+    background-color: var(--blue);
+    padding: 2vh;
+    font-weight: 100;
+    border: none;
+}

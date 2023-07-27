@@ -1,0 +1,117 @@
+#footer__container{
+    background-color: var(--footer-color);
+    width: 100%;
+    display: flex;
+    padding: 64px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 115px;
+    align-self: stretch;
+}
+#footer__logo{
+    display: flex;
+    align-items: center;
+    padding-right: 2%;
+    justify-content: center;
+}
+#footer__info{
+    width: 30vh;
+    height: auto;
+    line-height: 1.5;
+}
+#footer__form_container{
+    width: 100%;
+}
+
+.input__field , .form__contact__textarea{
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--preto-30, #C8C8C8);
+    outline: none;
+    border-radius: 4px;
+    padding: 5px;
+    background-color: white;
+}   
+.input__label {
+    position: absolute;
+    top: 0.5vh;
+    left: 2vh;
+    font-size: 14px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    color: var(--cor-placeholder);
+}
+
+
+/*testing*/
+
+.form__group {
+    position: relative;
+    padding: 5px 0 0;
+    margin-top: 10px;
+    width: 50%;
+  }
+  
+  .form__field {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 1.3rem;
+    color: var(--cor-placeholder);
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+  }
+  .form__field::placeholder {
+    color: transparent;
+  }
+  .form__field:placeholder-shown ~ .form__label {
+    cursor: text;
+    top: 20px;
+  }
+  
+  .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #9b9b9b;
+  }
+  
+  .form__field:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, var(--blue),var(--blue));
+    border-image-slice: 1;
+  }
+  .form__field:focus ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  
+  /* reset input */
+  .form__field:required, .form__field:invalid {
+    box-shadow: none;
+  }
+  
+
+  .form__contact__btn{
+    background-color: var(--blue);
+    color: var(--white);
+    display: flex;
+    padding: 1vh;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    margin-top: 2vh;
+  }

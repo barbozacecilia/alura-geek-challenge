@@ -1,0 +1,40 @@
+#products__container{
+ padding-top: 5vh;
+ padding-inline: 10vh;
+}
+#products__items_container{
+ padding: 2vh;
+}
+.products__title{
+ color: var(--menu-color);
+ margin-bottom: 1vh;
+}
+.products__card_container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+.card_img{
+    flex: 1 0 0;
+    align-self: stretch;
+    margin-bottom: 1vh;
+
+}
+.card_title{
+    color: var(--menu-color);
+    font-size: 14px;
+    margin-bottom: 1vh;
+}
+.card_price{
+    color: var(--menu-color);
+    font-size: 16px;
+    font-weight: bolder;
+    margin-bottom: 1vh;
+}
+.card_link{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    color: var(--blue);
+}
