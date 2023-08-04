@@ -26,7 +26,9 @@
                         </div>
                         <input  id="header__search-input" type="text" id="search" placeholder="¿Qué deseas buscar?"></input>
                     </div>
-                    <button id="menu__btn"><div id="menu__btn_text" type="submit" >Login</div></button>
+                    <nav>
+                        <a href="./screens/login.html" id="menu__btn"><div id="menu__btn_text" type="submit" >Login</div></a>
+                    </nav>
 
             </section>
         </header>
@@ -39,17 +41,11 @@
         </section>
 
         <section id="products__container">
+            <h2 class="products__title">Star Wars</h2>
             <div id="products__items_container" data-product>
-                <h2 class="products__title">Star Wars</h2>
-                <div class="products__card_container">
-                    <img class="card_img"  src="./assets/product-img.png" alt="imagen del producto">
-                    <h4 class="card_title">nombre del producto</h4>
-                    <p class="card_price">price</p>
-                    <a class="card_link" href="">Link</a>
-                </div>
             </div>
         </section>
-        <footer>
+        <footer id="footer__container_main">
             <div id="footer__container">
                 <div id="footer__logo">
                     <img src="./assets/sports_esports_black_24dp 1.png" alt="AluraGeek Logo" id="menu__logo">
@@ -71,10 +67,16 @@
                             <button type="submit" class="form__contact__btn">Enviar mensaje</button>
                         </form>
                     </div>
+                </div>
+
+                    <div id="footer__last_container">
+                        <p>Desarrollado por Cecilia Barboz</p>
+                        <p>2023</p>
+                    </div>  
         </footer>
     </div>
 </main>
-<script src="././controllers/products-controller.js" type="module"></script>
+<script src="././services/products-services.js" defer type="module"></script>
 
 </body>
 </html>

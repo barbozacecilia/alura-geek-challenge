@@ -1,8 +1,16 @@
-{"productsList":[
-    {
-    "name": "start",
-    "imgUrl": "./assets/product-img.png",
-    "price": "1000",
-    "id": "1"
-    }
-]}
+{
+    "productsList":[
+        {
+        "imgUrl": "./assets/product-img.png",
+        "name": "test",
+        "price": "1000",
+        "id": "1"
+        },
+        {
+        "imgUrl": "https://s3-alpha-sig.figma.com/img/ead5/4f1a/2e68ded1f8a4b87f715a5698d23e78bd?Expires=1691971200&Signature=k2TPMdaIXWOYtCYvgap5dDPFjj4PzsN56NTDKCEzxPwp6Q9ju1g93Uc3yDmBm9tjf5ODjbna9gUq~99jcChpjbIgSwkxIICxD607rB36VApmM3T~8OUZHdG6F9KvBtTw~ABD4V3tWJE6Wt~X8xujs5SUx-AMObmdRIY8AIbIdVgoIlG2FP3zF4KreQ12L1BOt9G9-koyz1SxYbHQRgF88FjPuazHjOBQIFw7PTB8kliSd6hGz7uV0ZMwWC9D3KxO3kmfB7GoIoXaIHotqE6uByTQD875s8w~ZbXVnK8DOG6a3BSe8anYpOARBrHHInVA6uTzOjppSPC9NkukYVxu6g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+        "name": "test",
+        "price": "1001",
+        "id": "2"
+        }
+    ]
+}

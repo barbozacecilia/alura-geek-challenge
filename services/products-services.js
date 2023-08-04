@@ -1,3 +1,44 @@
+//const customerList = () => fetch("http://localhost:3000/productsList").then((response) => response.json());
+
+const addNewCard=(imgUrl,name, price, id)=>{
+    const card= document.createElement("div")
+    const content= 
+        `<div class="products__card_container">
+                <img src=${imgUrl} alt="imagen del producto" id="card_img">
+                <p class="card_price"> ${name} </p>
+                <p class="card_price"> ${price} </p>
+                <a class="card_link" href="../product.html?id=${id}">Link</a>
+
+                </div>`
+    card.innerHTML=content
+    //card.dataset.id= id
+    return card
+}
+
+const products = document.querySelector('[data-product]')
+
+// clientServices.customerList().then((data) => {
+//     data.forEach(({imgUrl,name,price, id }) => {
+//         const newProduct = createNewLine(imgUrl,name,price, id);
+//         div.appendChild(newProduct);
+//      });
+    
+// }).catch((error) => alert('hubo un error'))
+const http = new XMLHttpRequest();
+http.open("GET", "https://64bdf1392320b36433c7ea24.mockapi.io/product");
+http.send();
+
+http.onload = () => { 
+            const data = JSON.parse(http.response);
+            console.log(data)
+            data.forEach( (product) =>{
+              const newProduct = addNewCard(product.imgUrl, product.name, product.price, product.id)
+              products.appendChild(newProduct)
+            })
+            console.log(data)
+        };
+
+
 //GET
 
 const listProducts = () =>{
@@ -16,14 +57,14 @@ const listProduct =(id) => {
 
 //POST
 
-const createProduct = (name, imgUrl, price) => {
+const createProduct = (imgUrl,name, price) => {
     return fetch(`https://64bdf1392320b36433c7ea24.mockapi.io/product`,{
         method: "POST",
         headers: {
             "Content-Type": "application/json",
         },
         body: JSON.stringify({
-            name, imgUrl, price
+         imgUrl, name , price
         })
     }).then((response)=>{
         if(response.ok){
@@ -34,12 +75,12 @@ const createProduct = (name, imgUrl, price) => {
     
 
 //PUT
-const modifyProduct = async(id,name,imgUrl, price, description)=>{
+const modifyProduct = async(imgUrl,name, price, description,id)=>{
     return fetch(`https://64bdf1392320b36433c7ea24.mockapi.io/product/${id}`,{
         method: "PUT",
         headers: {"Contenet-Type": "application/json"},
         body: JSON.stringify({
-            name,price,description,imgUrl
+            imgUrl, name,price,description,id
         }),
     })
     .then((response)=>{
@@ -64,41 +105,3 @@ export const productsServices= {
     deleteProduct,
 }
 
-
-
- const allInputs = document.querySelectorAll('.input__field');
- const textarea = document.querySelector('.form__contact__textarea');
- const label = document.querySelectorAll('.input__label');
-
- console.log(allInputs.length);
-
- for( let index = 0; index < allInputs.length ; index++){  
- allInputs[index].addEventListener("focus", function(){
-         console.log(label.length)
-         allInputs[index].nextElementSibling.style.color = 'grey';
-         allInputs[index].nextElementSibling.style.transition = 'all 0.3s ease';
-         allInputs[index].nextElementSibling.style.top = '-20px';
-         allInputs[index].nextElementSibling.style.color = 'var(--cor-de-blue)';
-     });
-
-textarea.addEventListener('focus', function(){
-    textarea.nextElementSibling.style.color = 'grey';
-    textarea.nextElementSibling.style.transition = 'all 0.3s ease';
-    textarea.nextElementSibling.style.top = '-20px';
-    textarea.nextElementSibling.style.color = 'var(--cor-de-blue)';
-})
-
- allInputs[index].addEventListener("blur", function(){
-        const label = allInputs[index].nextElementSibling;
-        label.style.top = '-20px';
-        label.style.width = '100%';
-        label.style.fontSize = '12px';
-        label.style.fontFamily = 'Raleway';
-     });
-     textarea.addEventListener('blur', function(){
-        textarea.style.top = '-20px';
-        textarea.style.width = '100%';
-        textarea.style.fontSize = '12px';
-        textarea.style.fontFamily = 'Raleway';
-     })
- }

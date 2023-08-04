@@ -1,0 +1,29 @@
+.add__new_product-container{
+    display: flex;
+    width: 100%;
+    padding: 10vh;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    background-color:var(--background-color) ;
+}
+
+.add__new_product{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+}
+.add__new_product-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    font-weight: bold;
+    color: var(--preto-100, #464646);
+    font-size: 32px;
+}

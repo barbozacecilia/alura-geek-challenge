@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Css style sheet reference -->
+    <link rel="stylesheet" href="../styles/basic.css">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/menu/menu.css">
+    <link rel="stylesheet" href="../styles/footer/footer.css">
+    <link rel="stylesheet" href="../styles/products/add-new-product.css">
+    <title>Agregar un nuevo producto</title>
+</head>
+<body>
+    <main>
+        <header>
+            <!-- Sección del Menú  -->
+            <section id="menu__container">
+                    <nav id="menu__logo-input_container">
+                        <a href="../index.html" id="menu__logo_container">
+                            <img src="../assets/sports_esports_black_24dp 1.png" alt="AluraGeek Logo" id="menu__logo">
+                            <img src="../assets/Texto.png" alt="AluraGeek" id="menu__text">
+                        </a>
+                        <input  id="header__search-input" type="text" id="search" placeholder="¿Qué deseas buscar?"></input>
+                    </nav>
+                    <nav>
+                    <a href="./login.html" id="menu__btn"><div id="menu__btn_text" type="submit" >Login</div></a>
+                    </nav>
+
+            </section>
+        </header>
+        <section>
+                <div class="add__new_product-container">
+                    <div class="add__new_product">
+                        <h4 class="add__new_product-form title">Agregar nuevo producto</h4>
+                        <form class="add__new_product-form" data-form>
+                            <div class="form__group field">
+                                <input class="form__field" type="input" placeholder="URL de imagen" name="url" id="url" data-url required >
+                                <label class="form__label" for="url">URL de imagen</label>
+                            </div>
+                            <div class="form__group field">
+                                <input class="form__field" type="input" placeholder="Nombre" name="name" id="name" data-name required>
+                                <label class="form__label" for="cat">Nombre</label>
+                            </div>
+                            <div class="form__group field">
+                                <input class="form__field" type="input" placeholder="Categoría" name="cat" id="cat" required>
+                                <label class="form__label" for="cat">Categoría</label>
+                            </div>
+                            <div class="form__group field">
+                                <input class="form__field" type="number" placeholder="Precio del producto" name="price" id="price" data-price required>
+                                <label class="form__label" for="price">Precio del producto</label>
+                            </div>
+                            <div class="form__group field">
+                                <textarea class="form__field" type="input" placeholder="Descripción del producto"  name="text" required></textarea>
+                                <label class="form__label" for="text">Descripción del producto</label>
+                            </div>
+                            <button type="submit" class="form__contact__btn">Agregar producto</button>
+                        </form>
+                    </div>
+                </div>
+        </section>
+        <footer id="footer__container_main">
+            <div id="footer__container">
+                <div id="footer__logo">
+                    <img src="../assets/sports_esports_black_24dp 1.png" alt="AluraGeek Logo" id="menu__logo">
+                    <img src="../assets/Texto.png" alt="AluraGeek" id="menu__text">
+                 </div>
+                    <div id="footer__info_container"><h4 id="footer__info">Somos apasionados por la cultura Geek, por eso nos encontramos siempre buscando los mejores productos de calidad para personas tan apasionadas como nosotros</h4>
+                    </div>
+                    <div id="footer__form_container">
+                        <h4>Hable con nosotros</h4>
+                        <form id="footer__form-container">
+                            <div class="form__group field">
+                                <input class="form__field" type="input" placeholder="Nombre" name="name" id="name" required>
+                                <label class="form__label" for="name">Nombre</label>
+                            </div>
+                            <div class="form__group field">
+                                <textarea class="form__field" type="input" placeholder="Escribe tu mensaje"  id="name" name="text" required></textarea>
+                                <label class="form__label" for="text">Escribe tu mensaje</label>
+                            </div>
+                            <button type="submit" class="form__contact__btn">Enviar mensaje</button>
+                        </form>
+                    </div>
+                </div>
+
+                    <div id="footer__last_container">
+                        <p>Desarrollado por Cecilia Barboz</p>
+                        <p>2023</p>
+                    </div>  
+
+        </footer>
+    </main>
+    <script src="../controllers/create-product-controller.js" defer type="module"></script>
+</body>
+</html>
