@@ -6,7 +6,7 @@ const addNewCard=(imgUrl,name, price, id)=>{
         `<div class="products__card_container">
                 <img src=${imgUrl} alt="imagen del producto" id="card_img">
                 <p class="card_price"> ${name} </p>
-                <p class="card_price"> ${price} </p>
+                <p class="card_price">$ ${price} </p>
                 <a class="card_link" href="../product.html?id=${id}">Link</a>
 
                 </div>`
@@ -96,6 +96,8 @@ const deleteProduct = async(id)=>{
         headers: {"Contenet-Type": "application/json"}
     })
 }
+
+
 
 export const productsServices= {
     listProducts,

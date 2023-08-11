@@ -1,49 +1,47 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Css style sheet reference -->
     <link rel="stylesheet" href="../styles/basic.css">
-    <link rel="stylesheet" href="..styles/reset.css">
+    <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/menu/menu.css">
-    <link rel="stylesheet" href="../styles/hero/hero.css">
-    <link rel="stylesheet" href="../styles/products/products.css">
     <link rel="stylesheet" href="../styles/footer/footer.css">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
-    <title>AluraGeek | Home</title>
+    <link rel="stylesheet" href="../styles/products/add-new-product.css">
+    <link rel="stylesheet" href="../styles/products/products.css">
+    <title>Editar productos</title>
 </head>
 <body>
     <main>
-    <div class="all">
         <header>
             <!-- Sección del Menú  -->
             <section id="menu__container">
-                    <div id="menu__logo-input_container">
-                        <div id="menu__logo_container">
+                    <nav id="menu__logo-input_container">
+                        <a href="../index.html" id="menu__logo_container">
                             <img src="../assets/sports_esports_black_24dp 1.png" alt="AluraGeek Logo" id="menu__logo">
                             <img src="../assets/Texto.png" alt="AluraGeek" id="menu__text">
-                        </div>
+                        </a>
                         <input  id="header__search-input" type="text" id="search" placeholder="¿Qué deseas buscar?"></input>
-                    </div>
+                    </nav>
                     <nav>
-                        <a href="./screens/login.html" id="menu__btn"><div id="menu__btn_text" type="submit" >Login</div></a>
+                    <a href="./login.html" id="menu__btn"><div id="menu__btn_text" type="submit" >Login</div></a>
                     </nav>
 
             </section>
         </header>
-        <section id="hero__container">
-            <div id="hero__background" >
-            <h1 id="hero__title">Febrero Promocional</h1>
-            <h3 id="hero__subtitle">Productos selecionados con 33% de descuento</h2>
-            <div><button id="hero__btn">Ver consolas</button></div>
-        </div>
-        </section>
-
-        <section id="products__container">
-            <h2 class="products__title">Star Wars</h2>
-            <div id="products__items_container" data-product>
-            </div>
+        <section>
+                <div class="add__new_product-container">
+                    <div class="add__new_product">
+                        <h4 class="add__new_product-form title">Editar productos</h4>
+                        <section id="products__container">
+                            <div id="products__items_container" data-product>
+                            </div>
+                        </section>
+                    </div>
+                </div>
         </section>
         <footer id="footer__container_main">
             <div id="footer__container">
@@ -73,10 +71,9 @@
                         <p>Desarrollado por Cecilia Barboz</p>
                         <p>2023</p>
                     </div>  
-        </footer>
-    </div>
-</main>
-<script src="../services/products-services.js" defer type="module"></script>
 
+        </footer>
+    </main>
+    <script src="../services/products-services.js" defer type="module"></script>
 </body>
 </html>

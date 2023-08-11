@@ -1,11 +1,13 @@
 #products__container{
  padding-top: 5vh;
  padding-inline: 10vh;
+
 }
 #products__items_container{
  padding: 2vh;
  display: flex;
  align-items: flex-end;
+ flex-wrap: wrap;
 }
 .products__title{
  color: var(--menu-color);
@@ -30,7 +32,6 @@
     color: var(--menu-color);
     font-size: 14px;
     margin-bottom: 1vh;
-    background-color: blueviolet;
 }
 .card_price{
     color: var(--menu-color);

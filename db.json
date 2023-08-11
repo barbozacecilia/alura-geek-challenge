@@ -1,7 +1,7 @@
 {
     "productsList":[
         {
-        "imgUrl": "./assets/product-img.png",
+        "imgUrl": "../assets/product-img.png",
         "name": "test",
         "price": "1000",
         "id": "1"
